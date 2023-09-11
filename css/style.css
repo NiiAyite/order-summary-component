@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-color: rgb(213, 218, 255);
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+section {
+    position: relative;
+    top: 10rem;
+    left: 49rem;
+    background-color: #fff;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: fit-content;
+    border-radius: 20px;
+    max-width: 25rem;
+    height: fit-content;
+    padding-bottom: 3rem;
+    box-shadow: 1px 1px 20px hsl(224, 23%, 55%);
+}
+
+.card-pic img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-text, .card-payment {
+    padding: 2rem;
+}
+
+.music {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+}
+
+.details {
+    margin-left: 1rem;
+}
+
+.details h4 {
+    color: rgb(39, 39, 90);
+}
+
+.details small {
+    color: rgb(102, 102, 160);
+}
+
+.change a {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.change a:hover {
+    text-decoration: none;
+    color: rgb(131, 111, 205);
+}
+
+.card-text h2 {
+    margin: 1rem;
+    color: rgb(39, 39, 90);
+}
+
+.card-text p {
+    color: rgb(102, 102, 160);
+}
+
+.card-payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    font-family: 'Poppins';
+    margin: .5rem;
+    padding: 10px 7rem 10px 7rem;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.pay {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 1px 1px 20px hsla(245, 75%, 52%, 0.697);
+}
+
+.pay:hover {
+    background-color: rgb(131, 111, 205);
+    cursor: pointer;
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    background-color: transparent;
+}
+
+.cancel:hover {
+    color: rgb(39, 39, 90);
+    cursor: pointer;
+}
+
+@media  screen and (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+
+    section {
+        margin: 0 .5rem 0 .5rem;
+        top: 2.5rem;
+        left: 0;
+    }
+
+    button {
+        padding: 1rem 5rem;
+    }
+}
